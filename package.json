@@ -1,0 +1,31 @@
+{
+  "name": "mongo-server",
+  "version": "1.0.0",
+  "description": "simple login Auth service that run on mongodb and express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "mongo",
+    "mongoose",
+    "node",
+    "express"
+  ],
+  "author": "raju",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-jwt": "^6.1.0",
+    "express-validator": "^6.13.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^4.2.1",
+    "mongoose": "^6.0.14",
+    "rootpath": "^0.1.2"
+  }
+}
