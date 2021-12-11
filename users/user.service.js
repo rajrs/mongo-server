@@ -14,8 +14,10 @@ module.exports = {
 }; 
  
 async function authenticate({ email, password }) {
+    console.log('auth-hit')
     const user = await User.findOne({ email });
-    console.log('user details',user)
+    console.log('user details')
+   // console.log('user details',user)
     if (user && bcrypt.compareSync(password, user.hash)) {
         const token = jwt.sign({ sub: user.id }, config.secret, { expiresIn: '7d' });
         return {
